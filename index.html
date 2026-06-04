@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Shahbaz Mushtaq — Civil Engineer, Farmer & Frontend Web Developer. Building modern, responsive websites for businesses, farms, restaurants, and startups." />
+  <meta name="keywords" content="Shahbaz Mushtaq, frontend developer, web developer, portfolio, civil engineer, Pakistan" />
+  <meta name="author" content="Shahbaz Mushtaq" />
+  <meta property="og:title" content="Shahbaz Mushtaq — Frontend Web Developer" />
+  <meta property="og:description" content="Building modern, responsive websites that help businesses grow online." />
+  <meta property="og:type" content="website" />
+  <title>Shahbaz Mushtaq — Frontend Developer</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- PRELOADER -->
+  <div id="preloader">
+    <div class="preloader-inner">
+      <div class="preloader-logo">SM</div>
+      <div class="preloader-bar"><span></span></div>
+    </div>
+  </div>
+
+  <!-- CURSOR -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- NAVIGATION -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">Shahbaz<span>.</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <span class="theme-icon sun">☀</span>
+          <span class="theme-icon moon">◐</span>
+        </button>
+        <a href="#contact" class="nav-cta">Hire Me</a>
+        <button class="hamburger" id="hamburger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-close" id="mobileClose">✕</button>
+    <ul>
+      <li><a href="#about" class="mobile-link">About</a></li>
+      <li><a href="#services" class="mobile-link">Services</a></li>
+      <li><a href="#skills" class="mobile-link">Skills</a></li>
+      <li><a href="#projects" class="mobile-link">Projects</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-bg">
+      <canvas id="heroCanvas"></canvas>
+      <div class="hero-gradient"></div>
+      <div class="hero-grid"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge reveal">
+        <span class="badge-dot"></span>
+        Available for freelance work
+      </div>
+      <h1 class="hero-title reveal">
+        Building Modern Websites<br/>
+        <span class="hero-title-accent">That Help Businesses</span><br/>
+        <span class="hero-typing" id="heroTyping"></span>
+      </h1>
+      <p class="hero-sub reveal">
+        Frontend Developer creating responsive websites for businesses,<br class="desktop-br"/>
+        farms, restaurants, and startups.
+      </p>
+      <div class="hero-actions reveal">
+        <a href="#projects" class="btn btn-primary">
+          <span>View My Work</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#contact" class="btn btn-ghost">Contact Me</a>
+      </div>
+      <div class="hero-stats reveal">
+        <div class="stat">
+          <span class="stat-num" data-count="4">0</span>+
+          <span class="stat-label">Projects</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-count="100">0</span>%
+          <span class="stat-label">Satisfaction</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-count="3">0</span>+
+          <span class="stat-label">Domains</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- TRUST STRIP -->
+  <section class="trust-strip">
+    <div class="container">
+      <div class="trust-items">
+        <div class="trust-item reveal">
+          <span class="trust-check">✓</span>
+          <span>Responsive Design</span>
+        </div>
+        <div class="trust-item reveal">
+          <span class="trust-check">✓</span>
+          <span>Fast Performance</span>
+        </div>
+        <div class="trust-item reveal">
+          <span class="trust-check">✓</span>
+          <span>Modern UI/UX</span>
+        </div>
+        <div class="trust-item reveal">
+          <span class="trust-check">✓</span>
+          <span>Mobile Friendly</span>
+        </div>
+        <div class="trust-item reveal">
+          <span class="trust-check">✓</span>
+          <span>SEO Ready</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about section-pad">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual reveal">
+          <div class="about-avatar">
+            <div class="avatar-ring"></div>
+            <div class="avatar-inner">
+              <span class="avatar-initials">SM</span>
+            </div>
+            <div class="avatar-badge">
+              <span>🌿</span>
+              <span>🏗</span>
+              <span>💻</span>
+            </div>
+          </div>
+          <div class="about-card glass">
+            <div class="about-card-row">
+              <span class="about-card-icon">📍</span>
+              <span>Pakistan</span>
+            </div>
+            <div class="about-card-row">
+              <span class="about-card-icon">📧</span>
+              <span>shabbyrajper3@gmail.com</span>
+            </div>
+            <div class="about-card-row">
+              <span class="about-card-icon">🔗</span>
+              <a href="https://github.com/binbaz998" target="_blank" rel="noopener">github.com/binbaz998</a>
+            </div>
+          </div>
+        </div>
+        <div class="about-text">
+          <div class="section-label reveal">About Me</div>
+          <h2 class="section-title reveal">Civil Engineer, Farmer<br/>&amp; Web Developer</h2>
+          <p class="about-desc reveal">
+            I am a Civil Engineer and Farmer with a genuine passion for technology and web development.
+            My unique background gives me a distinct edge — I understand real-world industries from the
+            inside, and I build websites that actually speak to their audiences.
+          </p>
+          <p class="about-desc reveal">
+            I build modern, responsive, user-friendly websites for businesses, farms, restaurants, and
+            digital projects. My focus is creating clean designs, smooth user experiences, and
+            professional websites that help businesses establish a strong online presence.
+          </p>
+          <div class="about-timeline reveal">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-year">2024</span>
+                <h4>Started Web Development</h4>
+                <p>Began building professional websites using HTML, CSS &amp; JavaScript</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-year">2024</span>
+                <h4>Launched Multiple Projects</h4>
+                <p>Published live projects including farm, restaurant &amp; gaming websites</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-year">2025</span>
+                <h4>Freelance Developer</h4>
+                <p>Offering professional web development services to global clients</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="services section-pad">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">What I Do</div>
+        <h2 class="section-title">Services I Offer</h2>
+        <p class="section-sub">From concept to launch, I build digital experiences that convert visitors into customers.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card glass reveal" data-delay="0">
+          <div class="service-icon">🏢</div>
+          <h3>Business Websites</h3>
+          <p>Professional websites that build credibility and generate leads for your business.</p>
+        </div>
+        <div class="service-card glass reveal" data-delay="1">
+          <div class="service-icon">🌾</div>
+          <h3>Farm &amp; Agriculture</h3>
+          <p>Specialized websites for farms, agriculture businesses, and rural enterprises.</p>
+        </div>
+        <div class="service-card glass reveal" data-delay="2">
+          <div class="service-icon">🍽</div>
+          <h3>Restaurant Websites</h3>
+          <p>Mouth-watering restaurant sites with menus, reservations, and location info.</p>
+        </div>
+        <div class="service-card glass reveal" data-delay="3">
+          <div class="service-icon">👤</div>
+          <h3>Portfolio Websites</h3>
+          <p>Showcase your work and personal brand with a stunning portfolio site.</p>
+        </div>
+        <div class="service-card glass reveal" data-delay="4">
+          <div class="service-icon">🚀</div>
+          <h3>Landing Pages</h3>
+          <p>High-converting landing pages designed to capture leads and drive sales.</p>
+        </div>
+        <div class="service-card glass reveal" data-delay="5">
+          <div class="service-icon">🔄</div>
+          <h3>Website Redesign</h3>
+          <p>Transform your outdated website into a modern, fast, and beautiful experience.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="skills section-pad">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">My Toolkit</div>
+        <h2 class="section-title">Skills &amp; Technologies</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-pill reveal" data-delay="0">
+          <span class="skill-icon">🧡</span>
+          <span>HTML5</span>
+        </div>
+        <div class="skill-pill reveal" data-delay="1">
+          <span class="skill-icon">💙</span>
+          <span>CSS3</span>
+        </div>
+        <div class="skill-pill reveal" data-delay="2">
+          <span class="skill-icon">💛</span>
+          <span>JavaScript</span>
+        </div>
+        <div class="skill-pill reveal" data-delay="3">
+          <span class="skill-icon">📱</span>
+          <span>Responsive Design</span>
+        </div>
+        <div class="skill-pill reveal" data-delay="4">
+          <span class="skill-icon">🐙</span>
+          <span>GitHub</span>
+        </div>
+        <div class="skill-pill reveal" data-delay="5">
+          <span class="skill-icon">⚡</span>
+          <span>Frontend Dev</span>
+        </div>
+        <div class="skill-pill reveal" data-delay="6">
+          <span class="skill-icon">🎨</span>
+          <span>UI Design</span>
+        </div>
+        <div class="skill-pill reveal" data-delay="7">
+          <span class="skill-icon">🤖</span>
+          <span>AI-Assisted Dev</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="projects section-pad">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">Portfolio</div>
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-sub">Real websites, live on the internet. Each one built from scratch.</p>
+      </div>
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <div class="project-card reveal featured" data-delay="0">
+          <div class="project-badge">⭐ Featured</div>
+          <div class="project-preview">
+            <div class="project-preview-bg farm-bg">
+              <div class="preview-overlay">
+                <a href="https://binbaz998.github.io/shahbazrajperfarm/" target="_blank" rel="noopener" class="preview-btn">
+                  View Live
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+                </a>
+              </div>
+              <div class="preview-mockup">
+                <div class="mockup-bar"><span></span><span></span><span></span></div>
+                <div class="mockup-content farm-mockup">
+                  <div class="mk-hero">🌾 Shahbaz Rajper Farm</div>
+                  <div class="mk-lines">
+                    <div class="mk-line long"></div>
+                    <div class="mk-line short"></div>
+                  </div>
+                  <div class="mk-cards">
+                    <div class="mk-card green"></div>
+                    <div class="mk-card green"></div>
+                    <div class="mk-card green"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag">Agriculture</span>
+              <span class="tag">HTML/CSS</span>
+              <span class="tag">Responsive</span>
+            </div>
+            <h3 class="project-title">Shahbaz Rajper Farm</h3>
+            <p class="project-desc">A modern agriculture website showcasing crops, farming activities, and farm operations with a clean, professional design.</p>
+            <a href="https://binbaz998.github.io/shahbazrajperfarm/" target="_blank" rel="noopener" class="project-cta">
+              Live Demo
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card reveal" data-delay="1">
+          <div class="project-preview">
+            <div class="project-preview-bg resto-bg">
+              <div class="preview-overlay">
+                <a href="https://binbaz998.github.io/city-guide-1/eat12.html" target="_blank" rel="noopener" class="preview-btn">
+                  View Live
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+                </a>
+              </div>
+              <div class="preview-mockup">
+                <div class="mockup-bar"><span></span><span></span><span></span></div>
+                <div class="mockup-content">
+                  <div class="mk-hero">🍽 Restaurant Discovery</div>
+                  <div class="mk-lines">
+                    <div class="mk-line long"></div>
+                    <div class="mk-line medium"></div>
+                  </div>
+                  <div class="mk-cards">
+                    <div class="mk-card orange"></div>
+                    <div class="mk-card orange"></div>
+                    <div class="mk-card orange"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag">City Guide</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">UI/UX</span>
+            </div>
+            <h3 class="project-title">Restaurant Discovery Platform</h3>
+            <p class="project-desc">A city guide helping users discover restaurants and food destinations with an intuitive search and filter experience.</p>
+            <a href="https://binbaz998.github.io/city-guide-1/eat12.html" target="_blank" rel="noopener" class="project-cta">
+              Live Demo
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card reveal" data-delay="2">
+          <div class="project-preview">
+            <div class="project-preview-bg art-bg">
+              <div class="preview-overlay">
+                <a href="https://binbaz998.github.io/city-guide-1/art123.html" target="_blank" rel="noopener" class="preview-btn">
+                  View Live
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+                </a>
+              </div>
+              <div class="preview-mockup">
+                <div class="mockup-bar"><span></span><span></span><span></span></div>
+                <div class="mockup-content">
+                  <div class="mk-hero">🎨 Art Exhibition</div>
+                  <div class="mk-lines">
+                    <div class="mk-line long"></div>
+                    <div class="mk-line short"></div>
+                  </div>
+                  <div class="mk-cards">
+                    <div class="mk-card purple"></div>
+                    <div class="mk-card purple"></div>
+                    <div class="mk-card purple"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag">Culture</span>
+              <span class="tag">HTML/CSS</span>
+              <span class="tag">Interactive</span>
+            </div>
+            <h3 class="project-title">Art Exhibition Guide</h3>
+            <p class="project-desc">A platform for exploring museums, exhibitions, and cultural attractions with elegant visual presentation.</p>
+            <a href="https://binbaz998.github.io/city-guide-1/art123.html" target="_blank" rel="noopener" class="project-cta">
+              Live Demo
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card reveal" data-delay="3">
+          <div class="project-preview">
+            <div class="project-preview-bg retro-bg">
+              <div class="preview-overlay">
+                <a href="https://binbaz998.github.io/retro-game-ui/" target="_blank" rel="noopener" class="preview-btn">
+                  View Live
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+                </a>
+              </div>
+              <div class="preview-mockup">
+                <div class="mockup-bar"><span></span><span></span><span></span></div>
+                <div class="mockup-content">
+                  <div class="mk-hero">🕹 Retro Gaming UI</div>
+                  <div class="mk-lines">
+                    <div class="mk-line medium"></div>
+                    <div class="mk-line short"></div>
+                  </div>
+                  <div class="mk-cards">
+                    <div class="mk-card cyan"></div>
+                    <div class="mk-card cyan"></div>
+                    <div class="mk-card cyan"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag">Gaming</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">Retro UI</span>
+            </div>
+            <h3 class="project-title">Retro Gaming UI</h3>
+            <p class="project-desc">A retro-inspired gaming interface featuring interactive UI elements, nostalgic design, and engaging gameplay aesthetics.</p>
+            <a href="https://binbaz998.github.io/retro-game-ui/" target="_blank" rel="noopener" class="project-cta">
+              Live Demo
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials section-pad">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">Client Love</div>
+        <h2 class="section-title">What Clients Say</h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card glass reveal" data-delay="0">
+          <div class="testimonial-stars">★★★★★</div>
+          <p>"Shahbaz delivered a beautiful website for our farm business. He truly understood what we needed and the result was beyond expectations."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">AK</div>
+            <div>
+              <strong>Ahmed Khan</strong>
+              <span>Farm Owner</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card glass reveal" data-delay="1">
+          <div class="testimonial-stars">★★★★★</div>
+          <p>"Professional, fast, and responsive. Our restaurant website looks stunning on every device. Highly recommend Shahbaz for web projects."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">SR</div>
+            <div>
+              <strong>Sara Raza</strong>
+              <span>Restaurant Owner</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card glass reveal" data-delay="2">
+          <div class="testimonial-stars">★★★★★</div>
+          <p>"The portfolio website Shahbaz built for me helped me land multiple freelance clients. Clean, modern, and exactly what I wanted."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">MI</div>
+            <div>
+              <strong>Muhammad Irfan</strong>
+              <span>Freelancer</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact section-pad">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <div class="section-label">Get In Touch</div>
+          <h2 class="section-title">Let's Build Something<br/>Great Together</h2>
+          <p class="contact-desc">Have a project in mind? I'd love to hear about it. Send me a message and let's talk about your ideas.</p>
+          <div class="contact-details">
+            <a href="mailto:shabbyrajper3@gmail.com" class="contact-item">
+              <div class="contact-icon">✉</div>
+              <div>
+                <span class="contact-label">Email</span>
+                <span class="contact-value">shabbyrajper3@gmail.com</span>
+              </div>
+            </a>
+            <a href="https://github.com/binbaz998" target="_blank" rel="noopener" class="contact-item">
+              <div class="contact-icon">🐙</div>
+              <div>
+                <span class="contact-label">GitHub</span>
+                <span class="contact-value">github.com/binbaz998</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="contact-form-wrap glass reveal">
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="e.g. John Smith" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="john@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary full-width">
+              <span>Send Message</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+            </button>
+            <div class="form-success" id="formSuccess">
+              ✅ Thanks! I'll get back to you soon.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <a href="#home" class="footer-logo">Shahbaz<span>.</span></a>
+        <p class="footer-tagline">Civil Engineer · Farmer · Web Developer</p>
+        <div class="footer-links">
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+          <a href="https://github.com/binbaz998" target="_blank" rel="noopener">GitHub</a>
+        </div>
+        <p class="footer-copy">Copyright © 2025 Shahbaz Mushtaq. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BACK TO TOP -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
