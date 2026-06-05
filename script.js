@@ -240,24 +240,41 @@ const form = document.getElementById('contactForm');
 const formSuccess = document.getElementById('formSuccess');
 
 form.addEventListener('submit', e => {
-  e.preventDefault();
-  const name = form.name.value.trim();
-  const email = form.email.value.trim();
-  const message = form.message.value.trim();
-  if (!name || !email || !message) return;
+    e.preventDefault();
+    const name = form.name.value.trim();
+    const email = form.email.value.trim();
+    const message = form.message.value.trim();
+    if (!name || !email || !message) return;
 
-  // Simulate send
-  const btn = form.querySelector('button[type="submit"]');
-  btn.textContent = 'Sending...';
-  btn.disabled = true;
+    const btn = form.querySelector('button[type="submit"]');
+    btn.textContent = 'Sending...';
+    btn.disabled = true;
 
-  setTimeout(() => {
-    form.reset();
-    btn.innerHTML = '<span>Send Message</span>';
-    btn.disabled = false;
-    formSuccess.classList.add('visible');
-    setTimeout(() => formSuccess.classList.remove('visible'), 5000);
-  }, 1200);
+    // Formspree ko data bhejna background mein
+    fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: {
+            'Accept': 'application/json'
+        }
+    })
+    .then(response => {
+        if (response.ok) {
+            form.reset();
+            if (formSuccess) {
+                formSuccess.classList.add('visible'); // Success message dikhana
+                setTimeout(() => formSuccess.classList.remove('visible'), 5000);
+            }
+            btn.innerHTML = '<span>Sent Successfully!</span>';
+        } else {
+            btn.innerHTML = '<span>Error! Try Again</span>';
+            btn.disabled = false;
+        }
+    })
+    .catch(error => {
+        btn.innerHTML = '<span>Error! Try Again</span>';
+        btn.disabled = false;
+    });
 });
 
 // ---- BACK TO TOP ----
